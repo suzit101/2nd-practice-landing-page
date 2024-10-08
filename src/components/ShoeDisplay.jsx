@@ -6,6 +6,7 @@ import ProductCard from "./ProductCard";
 import QuotesSection from "./QuoteSection";
 import AboutSection from "./About-us";
 import Footer from "./Footer";
+
 const ShoeDisplay = () => {
   return (
     <div className="flex flex-col items-center justify-center mt-16">
@@ -32,22 +33,22 @@ const ShoeDisplay = () => {
 
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-screen-lg mb-10">
         <Card
-          icon={FaShippingFast}
+          icon={<FaShippingFast className="w-16 h-16 mb-2  " />}
           title="FREE SHIPPING"
           description="On all order over $2000"
         />
         <Card
-          icon={FaShippingFast}
+          icon={<FaShippingFast className="w-16 h-16 mb-2" />}
           title="FREE SHIPPING"
           description="On all order over $2000"
         />
         <Card
-          icon={FaRegCreditCard}
+          icon={<FaRegCreditCard className="w-16 h-16 mb-2" />}
           title="MEMBER DISCOUNT"
           description="Register and save up to 29%"
         />
         <Card
-          icon={FaHeadset}
+          icon={<FaHeadset className="w-16 h-16 mb-2" />}
           title="PREMIUM SUPPORT"
           description="Support 24 hours per day"
         />
